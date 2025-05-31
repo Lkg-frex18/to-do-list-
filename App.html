@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/App.css">
+    <link rel="stylesheet" href="./CSS/calender.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Lictick</title>
+</head>
+<body>
+    <main class="principale">
+        <h1 id="titre-app">Lictick <img src="./image/logo.png" alt="il y a le logo"></h1>
+        <h2 id="titre-fonc">Fonctionnalité</h2>
+        <div class="fonctionnalite">
+            <div class="option passe1">
+                <i class="fa-duotone fa-solid fa-circle-plus icon"></i>
+            </div>
+            <div class="option passe2">
+                <i class="fa-solid fa-rectangle-list icon"></i>
+            </div>
+            <div class="option passe3">
+                <i class="fa-solid fa-calendar-days icon"></i>
+            </div>
+            <div class="option passe4">
+                <i class="fa-solid fa-gear icon"></i>
+            </div>
+        </div>
+        <div class="reaction">
+            <div class="pub">naviguer sur la to do</div>
+            <div class="fac but1">
+                <h1 class="titre-fontion">Création</h1>
+                <div class="Creation">
+                    <h1 id="tache"> Tâche</h1>
+                    <div class="element-tache">
+                        <input type="text" id="titre-tache" placeholder="Ajouter un tâche">
+                        <button id="ajout-tache">Ajouter</button>
+                    </div>
+                    <input type="datetime-local" id="temps-tache">
+
+                </div>
+            </div>
+            <div class="fac but2">
+                <h1 class="titre-fontion" id="conteur">Tâches[0]</h1>
+                <ul id="list-tache"></ul>
+            </div>
+            <div class="fac but3">
+                <h1 class="titre-fontion">Calendar</h1>
+                <div class="calendar">
+                    <header>
+                        <h3></h3>
+                        <nav>
+                            <button id="prev"></button>
+                            <button id="next"></button>
+                        </nav>
+                    </header>
+                    <section>
+                        <ul class="days">
+                            <li>Dim</li>
+                            <li>Lun</li>
+                            <li>Mar</li>
+                            <li>Mer</li>
+                            <li>Jeu</li>
+                            <li>Ven</li>
+                            <li>Sam</li>
+                        </ul>
+                        <ul class="dates">
+
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="fac but4">4</div>
+        </div>
+    </main>
+
+    <script src="./JS/Ap.js"></script>
+    
+</body>
+</html>
